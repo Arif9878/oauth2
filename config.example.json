@@ -1,0 +1,22 @@
+{
+    "service-name": "outh2",
+    "logger": {
+        "level": "debug"
+    },
+    "context": {
+        "timeout": 20
+    },
+    "echo": {
+        "port": ":5002",
+        "development": true,
+        "timeout": 30,
+        "basePath": "/api/v1",
+        "host": "http://localhost",
+        "debugHeaders": true,
+        "httpClientDebug": true,
+        "debugErrorsResponse": true,
+        "ignoreLogUrls": [
+          "metrics"
+        ]
+    }
+}
